@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Gabriel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .project {
+            background: #fff;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .project h2 {
+            margin-top: 0;
+        }
+        .project a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfólio de Sites - Gabriel</h1>
+    </header>
+    <div class="container">
+        <div class="project">
+            <h2><a href="https://protegeseguros.com.br" target="_blank">Protege Seguros</a></h2>
+            <p>Website oficial da Protege Seguros, focado na apresentação institucional e serviços de seguros.</p>
+            <ul>
+                <li><strong>Tecnologias:</strong> WordPress, Elementor, customizações CSS</li>
+                <li><strong>Destaques:</strong> Mais de 50 páginas criadas, integração com plataformas de leads, layout responsivo.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h2><a href="https://lp.protegeseguros.com.br" target="_blank">Landing Pages - Protege Seguros</a></h2>
+            <p>Focado em campanhas de marketing e captura de leads para a Protege Seguros.</p>
+        </div>
+
+        <div class="project">
+            <h2><a href="https://consorcios.protegeseguros.com.br" target="_blank">Protege Consórcios</a></h2>
+            <p>Voltado para a captação de leads e informações sobre consórcios.</p>
+        </div>
+
+        <div class="project">
+            <h2><a href="https://agrotrial.com.br" target="_blank">AgroTrial</a></h2>
+            <p>Site institucional da AgroTrial, empresa do ramo de fertilizantes e gesso agrícola.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Gabriel - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
