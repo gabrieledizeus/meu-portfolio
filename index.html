@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gabriel Edizeus | Back-end Developer</title>
+<title>Gabriel Edizeus | Desenvolvedor</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -48,22 +48,55 @@ opacity:0.9;
 font-size:18px;
 }
 
-.cta{
-margin-top:20px;
-}
-
 .container{
 max-width:1200px;
 margin:auto;
 padding:40px 20px;
 }
 
+.section-title{
+font-size:28px;
+margin-bottom:30px;
+text-align:center;
+}
+
+/* ABOUT */
+.about{
+background:var(--card);
+padding:30px;
+border-radius:14px;
+margin-bottom:40px;
+}
+
+.about p{
+margin-bottom:15px;
+}
+
+/* TECH */
+.tech-stack{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+margin-bottom:40px;
+}
+
+.tech-stack span{
+background:var(--card);
+padding:8px 14px;
+border-radius:20px;
+font-size:13px;
+border:1px solid rgba(255,255,255,0.08);
+}
+
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 }
 
+/* CARD */
 .card{
 background:var(--card);
 border-radius:14px;
@@ -126,33 +159,7 @@ transform:translateY(-2px);
 opacity:0.9;
 }
 
-.section-title{
-font-size:28px;
-margin-bottom:30px;
-text-align:center;
-}
-
-.about{
-background:var(--card);
-padding:30px;
-border-radius:14px;
-margin-bottom:40px;
-}
-
-.tech-stack{
-text-align:center;
-margin-bottom:40px;
-}
-
-.tech-stack span{
-display:inline-block;
-margin:5px;
-padding:6px 12px;
-background:var(--card);
-border-radius:6px;
-font-size:13px;
-}
-
+/* CONTACT */
 .contact{
 text-align:center;
 margin-top:40px;
@@ -202,38 +209,37 @@ opacity:0.7
 <header>
 <h1>Gabriel Edizeus</h1>
 <p class="subtitle">
-Desenvolvedor Back-end Java | Spring Boot | APIs REST | Integração de Sistemas
+Desenvolvedor Back-end Java | Spring Boot | APIs REST
 </p>
-
-<div class="cta">
-<a class="btn" href="https://linkedin.com/in/gabriel-edizeus" target="_blank">
-Entrar em contato
-</a>
-</div>
 
 <div class="contact-icons">
 <a href="https://github.com/gabrieledizeus" target="_blank"><i class="fa-brands fa-github"></i></a>
 <a href="https://linkedin.com/in/gabriel-edizeus" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 </div>
-
 </header>
 
 <div class="container">
 
+<!-- ABOUT -->
 <div class="about">
 <p>
-Desenvolvedor com experiência prática na construção de APIs REST com Java e Spring Boot, além de aplicações web com Next.js.
+Sou Gabriel, desenvolvedor Full Stack em início de carreira com experiência no desenvolvimento de aplicações web e APIs.
 </p>
 
 <p>
-Atuei em projetos reais envolvendo automação, SEO e geração de leads, contribuindo para aumento de <strong>60% nas conversões</strong>.
+Trabalho com <strong>Java (Spring Boot), Python, Next.js e TypeScript</strong>, atuando na construção de soluções voltadas para integração de sistemas, automação e desenvolvimento de interfaces.
 </p>
 
 <p>
-Tenho experiência com integração de APIs, banco de dados MySQL e automação com Python.
+Tenho experiência prática na criação de sites e landing pages, além de projetos que envolvem <strong>SEO e geração de leads</strong>, contribuindo para aumento de até <strong>60% nas conversões</strong>.
+</p>
+
+<p>
+Sou certificado em Oracle Cloud Infrastructure e estou sempre buscando evoluir como desenvolvedor, com foco em back-end e construção de APIs escaláveis.
 </p>
 </div>
 
+<!-- TECH -->
 <div class="tech-stack">
 <span>Java</span>
 <span>Spring Boot</span>
@@ -243,22 +249,24 @@ Tenho experiência com integração de APIs, banco de dados MySQL e automação 
 <span>MySQL</span>
 <span>APIs REST</span>
 <span>Git</span>
+<span>WordPress</span>
 </div>
 
+<!-- PROJETOS -->
 <h2 class="section-title">Projetos</h2>
 
 <div class="grid">
 
-<!-- PROJETO PRINCIPAL -->
+<!-- API -->
 <div class="card">
 <div class="preview">
 <img src="https://via.placeholder.com/400x200" />
 </div>
 <div class="card-content">
-<h3>API REST com Spring Boot</h3>
-<p class="tech">Java • Spring Boot • MySQL</p>
+<h3>Consulta API CEP em Java</h3>
+<p class="tech">Java • API • CSV</p>
 <p>
-API para gerenciamento de usuários com CRUD completo, integração com banco de dados e estrutura REST.
+Sistema que realiza leitura de CEPs em CSV e retorna dados completos de endereço via integração com API.
 </p>
 <a class="btn" href="https://github.com/gabrieledizeus/java-cep" target="_blank">Ver código</a>
 </div>
@@ -270,16 +278,16 @@ API para gerenciamento de usuários com CRUD completo, integração com banco de
 <img src="https://via.placeholder.com/400x200" />
 </div>
 <div class="card-content">
-<h3>Chatbot WhatsApp</h3>
+<h3>Chatbot WhatsApp Protege</h3>
 <p class="tech">Blip • Automação</p>
 <p>
-Chatbot responsável por atender mais de 7.000 usuários, automatizando processos de vendas e suporte.
+Chatbot responsável por atender mais de 7000 clientes, automatizando fluxo de vendas e suporte.
 </p>
-<a class="btn" href="https://wa.me/556132172900" target="_blank">Ver demo</a>
+<a class="btn" href="https://wa.me/556132172900?text=Oi" target="_blank">Ver demo</a>
 </div>
 </div>
 
-<!-- SITE PROTEGE -->
+<!-- PROTEGE -->
 <div class="card">
 <div class="preview">
 <img src="https://image.thum.io/get/https://protegeseguros.com.br" />
@@ -288,14 +296,60 @@ Chatbot responsável por atender mais de 7.000 usuários, automatizando processo
 <h3>Protege Seguros</h3>
 <p class="tech">WordPress • SEO</p>
 <p>
-Desenvolvimento de site com mais de 50 páginas e otimização de SEO, resultando em aumento de 60% nos leads.
+Site com mais de 50 páginas, otimizado para SEO, gerando aumento de 60% nos leads.
 </p>
-<a class="btn" href="https://protegeseguros.com.br" target="_blank">Ver projeto</a>
+<a class="btn" href="https://protegeseguros.com.br" target="_blank">Visitar</a>
+</div>
+</div>
+
+<!-- AGRO -->
+<div class="card">
+<div class="preview">
+<img src="https://image.thum.io/get/https://agrotrial.com.br" />
+</div>
+<div class="card-content">
+<h3>AgroTrial</h3>
+<p class="tech">WordPress</p>
+<p>
+Site institucional do setor agrícola com foco em performance e responsividade.
+</p>
+<a class="btn" href="https://agrotrial.com.br" target="_blank">Visitar</a>
+</div>
+</div>
+
+<!-- LANDING -->
+<div class="card">
+<div class="preview">
+<img src="https://image.thum.io/get/https://lp.protegeseguros.com.br" />
+</div>
+<div class="card-content">
+<h3>Landing Pages Protege</h3>
+<p class="tech">Marketing • SEO</p>
+<p>
+Landing pages focadas em geração de leads e campanhas digitais.
+</p>
+<a class="btn" href="https://lp.protegeseguros.com.br" target="_blank">Visitar</a>
+</div>
+</div>
+
+<!-- CONSORCIO -->
+<div class="card">
+<div class="preview">
+<img src="https://image.thum.io/get/https://consorcios.protegeseguros.com.br" />
+</div>
+<div class="card-content">
+<h3>Protege Consórcios</h3>
+<p class="tech">Marketing</p>
+<p>
+Página dedicada à captação de leads para consórcios.
+</p>
+<a class="btn" href="https://consorcios.protegeseguros.com.br" target="_blank">Visitar</a>
 </div>
 </div>
 
 </div>
 
+<!-- CONTATO -->
 <div class="contact">
 <h2 class="section-title">Contato</h2>
 
@@ -306,7 +360,6 @@ Desenvolvimento de site com mais de 50 páginas e otimização de SEO, resultand
 <a href="https://github.com/gabrieledizeus" target="_blank"><i class="fa-brands fa-github"></i></a>
 <a href="https://linkedin.com/in/gabriel-edizeus" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 </div>
-
 </div>
 
 </div>
