@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gabriel Edizeus | Desenvolvedor Junior</title>
+<title>Gabriel Edizeus | Back-end Developer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
+
 <style>
 :root{
 --bg:#0f172a;
@@ -39,17 +38,18 @@ padding:60px 20px;
 text-align:center;
 }
 
-h2{
-text-align:center;
-}
-  
 h1{
 font-size:42px;
 margin-bottom:10px;
 }
 
 .subtitle{
-opacity:0.8
+opacity:0.9;
+font-size:18px;
+}
+
+.cta{
+margin-top:20px;
 }
 
 .container{
@@ -101,7 +101,13 @@ margin-bottom:10px;
 .card p{
 font-size:14px;
 opacity:0.9;
-margin-bottom:20px;
+margin-bottom:15px;
+}
+
+.tech{
+font-size:12px;
+opacity:0.7;
+margin-bottom:10px;
 }
 
 .btn{
@@ -112,62 +118,61 @@ color:white;
 text-decoration:none;
 border-radius:8px;
 font-weight:600;
+transition:0.2s;
 }
 
 .btn:hover{
-opacity:0.9
+transform:translateY(-2px);
+opacity:0.9;
 }
 
 .section-title{
-font-size:30px;
+font-size:28px;
 margin-bottom:30px;
+text-align:center;
 }
 
 .about{
 background:var(--card);
 padding:30px;
 border-radius:14px;
+margin-bottom:40px;
 }
 
+.tech-stack{
+text-align:center;
+margin-bottom:40px;
+}
+
+.tech-stack span{
+display:inline-block;
+margin:5px;
+padding:6px 12px;
+background:var(--card);
+border-radius:6px;
+font-size:13px;
+}
 
 .contact{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-  gap:10px;
-  font-size:20px;
-}
-
-.fa-whatsapp,
-.fa-envelope{
-  font-size:28px;
-  color:#3b82f6;
-  transition:0.3s;
-}
-
-.fa-whatsapp:hover,
-.fa-envelope:hover{
-  transform:scale(1.2);
-  color:#2563eb;
+text-align:center;
+margin-top:40px;
 }
 
 .contact-icons{
-  display:flex;
-  justify-content:center;
-  gap:25px;
-  margin-top:15px;
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:15px;
 }
 
 .contact-icons a{
-  font-size:28px;
-  color:#3b82f6;
-  transition:0.3s;
+font-size:26px;
+color:var(--accent);
+transition:0.3s;
 }
 
 .contact-icons a:hover{
-  transform:scale(1.2);
-  color:#2563eb;
+transform:scale(1.2);
 }
 
 .toggle{
@@ -177,7 +182,7 @@ top:20px;
 background:var(--card);
 border:none;
 color:var(--text);
-padding:10px 14px;
+padding:10px;
 border-radius:8px;
 cursor:pointer;
 }
@@ -192,152 +197,114 @@ opacity:0.7
 
 <body>
 
-<button class="toggle" onclick="toggleTheme()">🌙/☀️</button>
+<button class="toggle" onclick="toggleTheme()">🌙</button>
 
 <header>
 <h1>Gabriel Edizeus</h1>
-<p class="subtitle">Desenvolvedor de Sites e Aplicações | Certificação Oracle • Java • HTML • JS • WordPress • Python</p>
-</header>
+<p class="subtitle">
+Desenvolvedor Back-end Java | Spring Boot | APIs REST | Integração de Sistemas
+</p>
 
-  <div class="contact">
-
+<div class="cta">
+<a class="btn" href="https://linkedin.com/in/gabriel-edizeus" target="_blank">
+Entrar em contato
+</a>
+</div>
 
 <div class="contact-icons">
-
-<a href="https://github.com/gabrieledizeus" target="_blank">
-    <i class="fa-brands fa-github"></i>
-  </a>  
-
-<a href="https://linkedin.com/in/gabriel-edizeus" target="_blank">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-
-  <a href="https://drive.google.com/file/d/1jC4laigeorK-I_i31QRlirmDh--S8FJj/view?usp=sharing" download>
-    <i class="fa-solid fa-file"></i>
-  </a>
-
+<a href="https://github.com/gabrieledizeus" target="_blank"><i class="fa-brands fa-github"></i></a>
+<a href="https://linkedin.com/in/gabriel-edizeus" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 </div>
 
-</div>
+</header>
 
-</div>
-  <div class="container">
+<div class="container">
 
 <div class="about">
 <p>
-Sou Gabriel, desenvolvedor Full Stack em início de carreira com experiência no desenvolvimento de aplicações web e sites institucionais. Trabalho com HTML, CSS, JavaScript, Next.js, TypeScript, Java (Spring Boot) e Python.<br><br>
+Desenvolvedor com experiência prática na construção de APIs REST com Java e Spring Boot, além de aplicações web com Next.js.
 </p>
 
 <p>
-Tenho experiência na criação de sites com WordPress e Elementor, participando de projetos como protegeseguros.com.br e agrotrial.com.br, com foco em interfaces responsivas, performance e boa experiência do usuário.<br>
-<br>
+Atuei em projetos reais envolvendo automação, SEO e geração de leads, contribuindo para aumento de <strong>60% nas conversões</strong>.
 </p>
 
 <p>
-Sou certificado em Oracle Cloud Infrastructure Foundations Associate e estou sempre buscando aprender novas tecnologias e evoluir como desenvolvedor.
+Tenho experiência com integração de APIs, banco de dados MySQL e automação com Python.
 </p>
 </div>
 
-<div class="container">
+<div class="tech-stack">
+<span>Java</span>
+<span>Spring Boot</span>
+<span>Python</span>
+<span>Next.js</span>
+<span>TypeScript</span>
+<span>MySQL</span>
+<span>APIs REST</span>
+<span>Git</span>
+</div>
 
 <h2 class="section-title">Projetos</h2>
 
 <div class="grid">
 
+<!-- PROJETO PRINCIPAL -->
+<div class="card">
+<div class="preview">
+<img src="https://via.placeholder.com/400x200" />
+</div>
+<div class="card-content">
+<h3>API REST com Spring Boot</h3>
+<p class="tech">Java • Spring Boot • MySQL</p>
+<p>
+API para gerenciamento de usuários com CRUD completo, integração com banco de dados e estrutura REST.
+</p>
+<a class="btn" href="https://github.com/gabrieledizeus/java-cep" target="_blank">Ver código</a>
+</div>
+</div>
+
+<!-- CHATBOT -->
+<div class="card">
+<div class="preview">
+<img src="https://via.placeholder.com/400x200" />
+</div>
+<div class="card-content">
+<h3>Chatbot WhatsApp</h3>
+<p class="tech">Blip • Automação</p>
+<p>
+Chatbot responsável por atender mais de 7.000 usuários, automatizando processos de vendas e suporte.
+</p>
+<a class="btn" href="https://wa.me/556132172900" target="_blank">Ver demo</a>
+</div>
+</div>
+
+<!-- SITE PROTEGE -->
 <div class="card">
 <div class="preview">
 <img src="https://image.thum.io/get/https://protegeseguros.com.br" />
 </div>
 <div class="card-content">
 <h3>Protege Seguros</h3>
-<p>Website institucional com mais de 50 páginas, layout responsivo e integração com plataformas de leads.</p>
-<a class="btn" href="https://protegeseguros.com.br" target="_blank">Visitar</a>
+<p class="tech">WordPress • SEO</p>
+<p>
+Desenvolvimento de site com mais de 50 páginas e otimização de SEO, resultando em aumento de 60% nos leads.
+</p>
+<a class="btn" href="https://protegeseguros.com.br" target="_blank">Ver projeto</a>
 </div>
 </div>
 
-<div class="card">
-<div class="preview">
-<img src="https://image.thum.io/get/https://agrotrial.com.br" />
 </div>
-<div class="card-content">
-<h3>AgroTrial</h3>
-<p>Site institucional da empresa do setor agrícola especializada em fertilizantes e gesso agrícola.</p>
-<a class="btn" href="https://agrotrial.com.br" target="_blank">Visitar</a>
-</div>
-</div>
-
-<div class="card">
-<div class="preview">
-<img src="https://image.thum.io/get/https://lp.protegeseguros.com.br" />
-</div>
-<div class="card-content">
-<h3>Landing Pages Protege</h3>
-<p>Páginas focadas em marketing digital e geração de leads para serviços da empresa.</p>
-<a class="btn" href="https://lp.protegeseguros.com.br" target="_blank">Visitar</a>
-</div>
-</div>
-
-<div class="card">
-<div class="preview">
-<img src="https://image.thum.io/get/https://consorcios.protegeseguros.com.br" />
-</div>
-<div class="card-content">
-<h3>Protege Consórcios</h3>
-<p>Landing page dedicada a captação de leads e apresentação de consórcios.</p>
-<a class="btn" href="https://consorcios.protegeseguros.com.br" target="_blank">Visitar</a>
-</div>
-</div>
-
-<div class="card">
-<div class="preview">
-<img src="https://image.thum.io/get/https://drive.google.com/file/d/1ew7JIgwzyf7idHkEJlB8jiQ-mxe02AUf/view?usp=sharing" />
-</div>
-<div class="card-content">
-<h3>Chatbot Whatsapp Protege</h3>
-<p>Chatbot criado para conduzir mais de 7000 clientes via fluxo de vendas ou suporte.</p>
-<a class="btn" href="https://wa.me/556132172900?text=Oi" target="_blank">Visitar</a>
-</div>
-</div>
-
-<div class="card">
-<div class="preview">
-<img src="https://image.thum.io/get/https://drive.google.com/file/d/1ZCtArIvntH4GbSOLUAO8In1MeJWQ4yFl/view?usp=sharing" />
-</div>
-<div class="card-content">
-<h3>Consulta API CEP em JAVA</h3>
-<p>Programa para fazer a leitura de CEPs em CSV retornando informações acerca do endereço</p>
-<a class="btn" href="https://github.com/gabrieledizeus/java-cep" target="_blank">Visitar</a>
-</div>
-</div>
-
-
-</div>
-
-</div>
-
-
 
 <div class="contact">
 <h2 class="section-title">Contato</h2>
 
-<p><i class="fa-solid fa-envelope"></i> gabrieledizeus@gmail.com</p>
-<p><i class="fa-brands fa-whatsapp"></i> (61) 99198-4696</p>
-
+<p>📧 gabrieledizeus@gmail.com</p>
+<p>📱 (61) 99198-4696</p>
 
 <div class="contact-icons">
-
-<a href="https://github.com/gabrieledizeus" target="_blank">
-    <i class="fa-brands fa-github"></i>
-  </a>  
-
-<a href="https://linkedin.com/in/gabriel-edizeus" target="_blank">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-
-  <a href="https://drive.google.com/file/d/1jC4laigeorK-I_i31QRlirmDh--S8FJj/view?usp=sharing" download>
-    <i class="fa-solid fa-file"></i>
-  </a>
-
+<a href="https://github.com/gabrieledizeus" target="_blank"><i class="fa-brands fa-github"></i></a>
+<a href="https://linkedin.com/in/gabriel-edizeus" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 </div>
 
 </div>
@@ -345,11 +312,10 @@ Sou certificado em Oracle Cloud Infrastructure Foundations Associate e estou sem
 </div>
 
 <footer>
-© 2026 Gabriel Edizeus - Desenvolvedor Júnior
+© 2026 Gabriel Edizeus
 </footer>
 
 <script>
-
 function toggleTheme(){
  document.body.classList.toggle("light")
 }
@@ -365,7 +331,6 @@ entry.target.classList.add("show")
 })
 
 cards.forEach(card=>observer.observe(card))
-
 </script>
 
 </body>
